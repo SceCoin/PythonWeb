@@ -1,21 +1,6 @@
-#coding: utf-8
+# coding: utf-8
 
 import socket
-
-"""
-2017/02/16
-作业 1
-
-
-资料:
-在 Python3 中，bytes 和 str 的互相转换方式是
-str.encode('utf-8')
-bytes.decode('utf-8')
-
-send 函数的参数和 recv 函数的返回值都是 bytes 类型
-其他请参考上课内容, 不懂在群里发问, 不要憋着
-"""
-
 
 # 1
 # 补全函数
@@ -37,6 +22,7 @@ def protocol_of_url(url):
         return url.split('://')[0]
     else:
         return None
+
 
 # 2
 # 补全函数
@@ -66,6 +52,8 @@ def host_of_url(url):
         host = url2[:str2]
 
     return host
+
+
 # 3
 # 补全函数
 def port_of_url(url):
@@ -85,13 +73,17 @@ def port_of_url(url):
     host = host_of_url(url)
     str3 = host.find(':')
     if str3 > 0:
-        port = host[str3+1:]
+        port = host[str3 + 1:]
     else:
         port = 80
 
     return port
+
+
 # 4
 # 补全函数
+
+
 def path_of_url(url):
     '''
     url 是字符串, 可能的值如下
@@ -142,7 +134,7 @@ def parsed_url(url):
     # tuple_url = (proto, host, port, path)
     # return tuple_url
 
-    #判断协议
+    # 判断协议
     str = url.find('://')
     if str > 0:
         proto = url.split('://')[0]
@@ -151,7 +143,7 @@ def parsed_url(url):
         proto = 'None'
         url2 = url
 
-    #判断主机名和路径
+    # 判断主机名和路径
     str2 = url2.find('/')
     if str2 == -1:
         host = url2
@@ -160,10 +152,10 @@ def parsed_url(url):
         host = url2[:str2]
         path = url2[str2:]
 
-    #判断端口
+    # 判断端口
     str3 = host.find(':')
     if str3 > 0:
-        port = host[:str3+1]
+        port = host[:str3 + 1]
     else:
         port = 80
 
@@ -182,11 +174,11 @@ def get(url):
     '''
     s = socket.socket()
 
-    #获取主机和端口
+    # 获取主机和端口
     host = host_of_url(url)
     port = port_of_url(url)
 
-    #连接上主机
+    # 连接上主机
     s.connect((host, port))
 
     ip, port = s.getsockname()
@@ -200,9 +192,10 @@ def get(url):
 
     response = s.recv(1000)
 
-    print('响应', response,'/n')
+    print('响应', response, '/n')
 
     print('响应的 str 格式', response.decode('utf-8'))
+
 
 # 使用
 def main():
