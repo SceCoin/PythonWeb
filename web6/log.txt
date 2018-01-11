@@ -1,0 +1,645 @@
+2018/01/11 19:54:58 <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jinja demo </title>
+</head>
+<body>
+    <!-- 变量替换 -->
+    <h1>123</h1>
+
+    <!-- 循环 -->
+    
+        <span class="number">0</span>
+    
+        <span class="number">1</span>
+    
+        <span class="number">2</span>
+    
+
+    <!-- 循环加对象/字典访问 -->
+    <div class="user-container">
+    
+        <div class="user-cell">
+            <span>sce</span>
+            <span>1</span>
+        </div>
+    
+        <div class="user-cell">
+            <span>zaj</span>
+            <span>2</span>
+        </div>
+    
+    </div>
+</body>
+</html>
+2018/01/11 20:25:04 start at :3000
+2018/01/11 20:25:09 ip and request, ('127.0.0.1', 7932)
+GET /login HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+2018/01/11 20:25:09 cookie ['']
+2018/01/11 20:25:09 path and query /login {}
+2018/01/11 20:25:27 start at :3000
+2018/01/11 20:25:29 ip and request, ('127.0.0.1', 7970)
+GET / HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:25:29 cookie ['']
+2018/01/11 20:25:29 path and query / {}
+2018/01/11 20:25:29 debug ** sendall
+2018/01/11 20:25:29 debug **** close
+2018/01/11 20:25:29 debug * closed
+2018/01/11 20:25:29 ip and request, ('127.0.0.1', 7971)
+GET /static?file=doge.gif HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+2018/01/11 20:25:29 cookie ['']
+2018/01/11 20:25:29 path and query /static {'file': 'doge.gif'}
+2018/01/11 20:25:29 debug ** sendall
+2018/01/11 20:25:29 debug **** close
+2018/01/11 20:25:30 debug * closed
+2018/01/11 20:25:30 ip and request, ('127.0.0.1', 7972)
+GET /static?file=doge1.jpg HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+2018/01/11 20:25:30 cookie ['']
+2018/01/11 20:25:30 path and query /static {'file': 'doge1.jpg'}
+2018/01/11 20:25:30 debug ** sendall
+2018/01/11 20:25:30 debug **** close
+2018/01/11 20:25:30 debug * closed
+2018/01/11 20:25:30 ip and request, ('127.0.0.1', 7973)
+GET /static?file=doge2.gif HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+2018/01/11 20:25:30 cookie ['']
+2018/01/11 20:25:30 path and query /static {'file': 'doge2.gif'}
+2018/01/11 20:25:30 debug ** sendall
+2018/01/11 20:25:30 debug **** close
+2018/01/11 20:25:30 debug * closed
+2018/01/11 20:25:30 ip and request, ('127.0.0.1', 7974)
+GET /favicon.ico HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+2018/01/11 20:25:30 cookie ['']
+2018/01/11 20:25:30 path and query /favicon.ico {}
+2018/01/11 20:25:30 debug ** sendall
+2018/01/11 20:25:30 debug **** close
+2018/01/11 20:25:30 debug * closed
+2018/01/11 20:25:35 ip and request, ('127.0.0.1', 7977)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2018/01/11 20:25:35 cookie ['']
+2018/01/11 20:25:35 path and query /jinja/index {}
+2018/01/11 20:26:05 start at :3000
+2018/01/11 20:26:06 ip and request, ('127.0.0.1', 8004)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2018/01/11 20:26:06 cookie ['']
+2018/01/11 20:26:06 path and query /jinja/index {}
+2018/01/11 20:26:06 debug ** sendall
+2018/01/11 20:26:06 debug **** close
+2018/01/11 20:26:06 debug * closed
+2018/01/11 20:26:12 ip and request, ('127.0.0.1', 8005)
+
+2018/01/11 20:27:03 ip and request, ('127.0.0.1', 8013)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:27:03 cookie ['']
+2018/01/11 20:27:03 path and query /jinja/index {}
+2018/01/11 20:27:03 debug ** sendall
+2018/01/11 20:27:03 debug **** close
+2018/01/11 20:27:03 debug * closed
+2018/01/11 20:27:04 ip and request, ('127.0.0.1', 8015)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:27:04 cookie ['']
+2018/01/11 20:27:04 path and query /jinja/index {}
+2018/01/11 20:27:04 debug ** sendall
+2018/01/11 20:27:04 debug **** close
+2018/01/11 20:27:04 debug * closed
+2018/01/11 20:27:09 ip and request, ('127.0.0.1', 8017)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:27:09 cookie ['']
+2018/01/11 20:27:09 path and query /jinja/index {}
+2018/01/11 20:27:09 debug ** sendall
+2018/01/11 20:27:09 debug **** close
+2018/01/11 20:27:09 debug * closed
+2018/01/11 20:27:10 ip and request, ('127.0.0.1', 8018)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:27:10 cookie ['']
+2018/01/11 20:27:10 path and query /jinja/index {}
+2018/01/11 20:27:10 debug ** sendall
+2018/01/11 20:27:10 debug **** close
+2018/01/11 20:27:10 debug * closed
+2018/01/11 20:27:16 ip and request, ('127.0.0.1', 8019)
+
+2018/01/11 20:28:23 ip and request, ('127.0.0.1', 8044)
+
+2018/01/11 20:29:10 start at :3000
+2018/01/11 20:29:13 ip and request, ('127.0.0.1', 8052)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:29:13 cookie ['']
+2018/01/11 20:29:13 path and query /jinja/index {}
+2018/01/11 20:29:13 debug ** sendall
+2018/01/11 20:29:13 debug **** close
+2018/01/11 20:29:13 debug * closed
+2018/01/11 20:29:14 ip and request, ('127.0.0.1', 8053)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:29:14 cookie ['']
+2018/01/11 20:29:14 path and query /jinja/index {}
+2018/01/11 20:29:14 debug ** sendall
+2018/01/11 20:29:14 debug **** close
+2018/01/11 20:29:14 debug * closed
+2018/01/11 20:29:18 ip and request, ('127.0.0.1', 8054)
+POST /jinja/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 9
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+title=123
+2018/01/11 20:29:18 cookie ['']
+2018/01/11 20:29:18 path and query /jinja/add {}
+2018/01/11 20:29:18 debug ** sendall
+2018/01/11 20:29:18 debug **** close
+2018/01/11 20:29:18 debug * closed
+2018/01/11 20:29:18 ip and request, ('127.0.0.1', 8055)
+GET / HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2018/01/11 20:29:18 cookie ['']
+2018/01/11 20:29:18 path and query / {}
+2018/01/11 20:29:18 debug ** sendall
+2018/01/11 20:29:18 debug **** close
+2018/01/11 20:29:18 debug * closed
+2018/01/11 20:29:18 ip and request, ('127.0.0.1', 8056)
+GET /static?file=doge.gif HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+
+
+2018/01/11 20:29:18 cookie ['']
+2018/01/11 20:29:18 path and query /static {'file': 'doge.gif'}
+2018/01/11 20:29:18 debug ** sendall
+2018/01/11 20:29:18 debug **** close
+2018/01/11 20:29:18 debug * closed
+2018/01/11 20:29:18 ip and request, ('127.0.0.1', 8057)
+GET /static?file=doge1.jpg HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+
+
+2018/01/11 20:29:18 cookie ['']
+2018/01/11 20:29:18 path and query /static {'file': 'doge1.jpg'}
+2018/01/11 20:29:18 debug ** sendall
+2018/01/11 20:29:18 debug **** close
+2018/01/11 20:29:18 debug * closed
+2018/01/11 20:29:18 ip and request, ('127.0.0.1', 8058)
+GET /static?file=doge2.gif HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+
+
+2018/01/11 20:29:18 cookie ['']
+2018/01/11 20:29:18 path and query /static {'file': 'doge2.gif'}
+2018/01/11 20:29:18 debug ** sendall
+2018/01/11 20:29:18 debug **** close
+2018/01/11 20:29:18 debug * closed
+2018/01/11 20:29:37 ip and request, ('127.0.0.1', 8061)
+
+2018/01/11 20:29:37 ip and request, ('127.0.0.1', 8063)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2018/01/11 20:29:37 cookie ['']
+2018/01/11 20:29:37 path and query /jinja/index {}
+2018/01/11 20:29:37 debug ** sendall
+2018/01/11 20:29:37 debug **** close
+2018/01/11 20:29:37 debug * closed
+2018/01/11 20:29:40 start at :3000
+2018/01/11 20:29:42 ip and request, ('127.0.0.1', 8067)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:29:42 cookie ['']
+2018/01/11 20:29:42 path and query /jinja/index {}
+2018/01/11 20:29:42 debug ** sendall
+2018/01/11 20:29:42 debug **** close
+2018/01/11 20:29:42 debug * closed
+2018/01/11 20:29:44 ip and request, ('127.0.0.1', 8069)
+POST /jinja/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 9
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+title=123
+2018/01/11 20:29:44 cookie ['']
+2018/01/11 20:29:44 path and query /jinja/add {}
+2018/01/11 20:29:44 debug ** sendall
+2018/01/11 20:29:44 debug **** close
+2018/01/11 20:29:44 debug * closed
+2018/01/11 20:29:44 ip and request, ('127.0.0.1', 8070)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2018/01/11 20:29:44 cookie ['']
+2018/01/11 20:29:44 path and query /jinja/index {}
+2018/01/11 20:29:44 debug ** sendall
+2018/01/11 20:29:44 debug **** close
+2018/01/11 20:29:44 debug * closed
+2018/01/11 20:29:52 ip and request, ('127.0.0.1', 8071)
+POST /jinja/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 9
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+title=123
+2018/01/11 20:29:52 cookie ['']
+2018/01/11 20:29:52 path and query /jinja/add {}
+2018/01/11 20:29:52 debug ** sendall
+2018/01/11 20:29:52 debug **** close
+2018/01/11 20:29:52 debug * closed
+2018/01/11 20:29:52 ip and request, ('127.0.0.1', 8072)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2018/01/11 20:29:52 cookie ['']
+2018/01/11 20:29:52 path and query /jinja/index {}
+2018/01/11 20:29:52 debug ** sendall
+2018/01/11 20:29:52 debug **** close
+2018/01/11 20:29:52 debug * closed
+2018/01/11 20:31:25 start at :3000
+2018/01/11 20:31:27 ip and request, ('127.0.0.1', 8086)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2018/01/11 20:31:27 cookie ['']
+2018/01/11 20:31:27 path and query /jinja/index {}
+2018/01/11 20:31:27 debug ** sendall
+2018/01/11 20:31:27 debug **** close
+2018/01/11 20:31:27 debug * closed
+2018/01/11 20:31:28 ip and request, ('127.0.0.1', 8087)
+POST /jinja/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 9
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+title=123
+2018/01/11 20:31:29 cookie ['']
+2018/01/11 20:31:29 path and query /jinja/add {}
+2018/01/11 20:31:29 debug save
+2018/01/11 20:31:29 models [< Todo
+id: (0)
+title: (sdf)
+user_id: (0)
+created_time: (1515499194)
+updated_time: (1515499194) >
+, < Todo
+id: (2)
+title: (aaaaaaaaa)
+user_id: (0)
+created_time: (1515499198)
+updated_time: (1515499206) >
+, < Todo
+id: (3)
+title: (adsfaf)
+user_id: (0)
+created_time: (1515499200)
+updated_time: (1515499200) >
+, < Todo
+id: (4)
+title: (aaa)
+user_id: (1)
+created_time: (1515499249)
+updated_time: (1515499249) >
+, < Todo
+id: (5)
+title: (ssss)
+user_id: (1)
+created_time: (1515499251)
+updated_time: (1515499251) >
+, < Todo
+id: (7)
+title: (rrr)
+user_id: (1)
+created_time: (1515499254)
+updated_time: (1515499254) >
+]
+2018/01/11 20:31:29 用 log 可以查看代码执行的走向
+2018/01/11 20:31:29 debug ** sendall
+2018/01/11 20:31:29 debug **** close
+2018/01/11 20:31:29 debug * closed
+2018/01/11 20:31:29 ip and request, ('127.0.0.1', 8088)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2018/01/11 20:31:29 cookie ['']
+2018/01/11 20:31:29 path and query /jinja/index {}
+2018/01/11 20:31:29 debug ** sendall
+2018/01/11 20:31:29 debug **** close
+2018/01/11 20:31:29 debug * closed
+2018/01/11 20:31:32 ip and request, ('127.0.0.1', 8089)
+POST /jinja/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 9
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+title=222
+2018/01/11 20:31:32 cookie ['']
+2018/01/11 20:31:32 path and query /jinja/add {}
+2018/01/11 20:31:32 debug save
+2018/01/11 20:31:32 models [< Todo
+id: (0)
+title: (sdf)
+user_id: (0)
+created_time: (1515499194)
+updated_time: (1515499194) >
+, < Todo
+id: (2)
+title: (aaaaaaaaa)
+user_id: (0)
+created_time: (1515499198)
+updated_time: (1515499206) >
+, < Todo
+id: (3)
+title: (adsfaf)
+user_id: (0)
+created_time: (1515499200)
+updated_time: (1515499200) >
+, < Todo
+id: (4)
+title: (aaa)
+user_id: (1)
+created_time: (1515499249)
+updated_time: (1515499249) >
+, < Todo
+id: (5)
+title: (ssss)
+user_id: (1)
+created_time: (1515499251)
+updated_time: (1515499251) >
+, < Todo
+id: (7)
+title: (rrr)
+user_id: (1)
+created_time: (1515499254)
+updated_time: (1515499254) >
+, < Todo
+id: (8)
+title: (123)
+user_id: (-1)
+created_time: (0)
+updated_time: (0) >
+]
+2018/01/11 20:31:32 用 log 可以查看代码执行的走向
+2018/01/11 20:31:32 debug ** sendall
+2018/01/11 20:31:32 debug **** close
+2018/01/11 20:31:32 debug * closed
+2018/01/11 20:31:32 ip and request, ('127.0.0.1', 8090)
+GET /jinja/index HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/jinja/index
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2018/01/11 20:31:32 cookie ['']
+2018/01/11 20:31:32 path and query /jinja/index {}
+2018/01/11 20:31:32 debug ** sendall
+2018/01/11 20:31:32 debug **** close
+2018/01/11 20:31:32 debug * closed
+2018/01/11 20:31:38 ip and request, ('127.0.0.1', 8091)
+
+2018/01/11 20:45:01 ip and request, ('127.0.0.1', 8315)
+
